@@ -234,3 +234,53 @@ LinkList LinkList::mergeKLists(vector<ListNode*>& lists) {
 
 	return *this;
 }
+
+/*
+
+*/
+LinkList LinkList::reverseKGroup(ListNode* head, int k)
+{
+	if (head == nullptr || k <= 1) {
+		return *this;
+	}
+
+	ListNode* root = new ListNode(-1);
+	root->next = head;
+
+	ListNode* cur = root;
+	ListNode* prv = root;
+	ListNode* a = nullptr;
+	ListNode* b = nullptr;
+	ListNode* temp = nullptr;
+
+	while (cur) {
+
+		/*1.move cur to K*/
+		prv = cur;
+		for (int i = 0; i < k; i++) {
+			cur = cur->next;
+			if (cur == nullptr)
+			{
+				_head = root->next;
+				return *this;
+			}
+		}
+		
+		a = prv->next;
+		b = cur->next;
+
+		/*2.swap*/
+		temp = prv;
+		prv = cur;
+		cur = temp;
+
+		prv->next = b;
+		cur->next = a;
+
+		/*move head*/
+		cur = b;
+	}
+	_head = root->next;
+
+	return *this;
+}

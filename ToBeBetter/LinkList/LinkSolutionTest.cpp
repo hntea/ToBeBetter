@@ -14,6 +14,7 @@ LinkSolutionTest::~LinkSolutionTest()
 }
 
 void LinkSolutionTest::run() {
+#if 0
 	cout << "Hello Link Solution Test" << endl;
 	cout << endl << "Merge K link list " << endl;
 	LinkList a;
@@ -35,4 +36,8 @@ void LinkSolutionTest::run() {
 	lists.push_back(d.getHead());
 	lists.push_back(e.getHead());
 	a.mergeKLists(lists).show();
+#endif
+	LinkList a;
+	a.getInitList(0, 5).show();
+	a.reverseKGroup(a.getHead(), 3).show();
 }

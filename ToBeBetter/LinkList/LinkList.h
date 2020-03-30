@@ -23,6 +23,7 @@ public:
 	LinkList mergeTwoLists(ListNode* l1, ListNode* l2);
 	LinkList mergeKLists(vector<ListNode*>& lists);
 	LinkList swapPairs(ListNode* head);
+	LinkList reverseKGroup(ListNode* head, int k);
 	LinkList show();
 
 private:
