@@ -115,12 +115,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Tree\TreeSolutionTest.cpp" />
+    <ClCompile Include="Tree\BaseTree.cpp" />
     <ClCompile Include="Base\BaseSolution.cpp" />
     <ClCompile Include="LinkList\LinkList.cpp" />
     <ClCompile Include="LinkList\LinkSolutionTest.cpp" />
     <ClCompile Include="ToBeBetter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Tree\TreeSolutionTest.h" />
+    <ClInclude Include="Tree\BaseTree.h" />
     <ClInclude Include="Base\BaseSolution.h" />
     <ClInclude Include="LinkList\LinkList.h" />
     <ClInclude Include="LinkList\LinkSolutionTest.h" />

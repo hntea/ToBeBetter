@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ToBeBetter.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="LinkList\LinkList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -25,6 +22,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="LinkList\LinkSolutionTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree\BaseTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree\TreeSolutionTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToBeBetter.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -36,6 +42,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="LinkList\LinkSolutionTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\BaseTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\TreeSolutionTest.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
