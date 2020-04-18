@@ -28,6 +28,7 @@ public:
 
 	vector<int> inorderTraversal(TreeNode* root);
 	vector<TreeNode*> generateTrees(int n);
+	TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q);
 
 	inline TreeNode* getRoot() { return _root; }
 private:
